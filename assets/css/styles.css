@@ -280,9 +280,21 @@ img {
 	justify-self: end;
 }
 
-.location__icon {
-	
+.location__icon {	
 	width: 2rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	
+}
+
+.right__arrow {
+	background-color: var(--mau-trang);
+	border-radius: .5rem;
+	margin-left: .25rem;
+	padding: .5rem;
+	color: var(--mau-xanh);
+	font-weight: var(--font-semi-bold);
+	font-size: var(--small-font-size);
 }
 
 .btn__discover {
@@ -302,4 +314,58 @@ img {
 .home__member-sign-in {
 	color: var(--mau-do);
 	font-weight: var(--font-bold);
+}
+
+/* Food near me */
+
+.fnm__data {
+	margin-bottom: 1rem;
+	display: grid;
+	/* justify-content: center;
+	align-items: center; */
+	align-items: center;
+	gap: 2rem;
+	grid-template-columns: repeat(2,auto);
+}
+
+.fnm__title {
+	display: flex;
+	font-size: 2rem;
+	font-weight: var(--font-bold);
+	gap: .5rem;
+
+	justify-content: start;
+}
+
+.fnm__scroll {
+	justify-self: flex-end;
+}
+
+.fnm__item-data {
+	display: grid;
+	grid-template-columns: repeat(2,minmax(180px,220px));
+	justify-content: center;
+	align-items: center;
+}
+
+.fnm__item-title {
+	font-size: var(--h3-font-size);
+	color: var(--mau-den);
+	font-weight: var(--font-bold);
+	margin-bottom: .5rem;
+}
+.fnm__item-desc p {
+	color: var(--mau-xam);
+	margin-bottom: .25rem;
+}
+
+.fnm__item-price {
+	color: var(--mau-do);
+	font-weight: var(--font-semi-bold);
+	font-size: var(--h3-font-size);
+}
+
+.swiper-button-next,.swiper-button-prev {
+	color:var(--mau-den);
+	font-size: var(--small-font-size);
 }

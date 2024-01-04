@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Food delivery - bai so 2</title>
@@ -34,6 +34,7 @@
         </nav>
     </header>
     <main class="main">
+        <!-- Home -->
         <section class="section" id="home">
             <div class="home__container container grid">
                 <div class="home__data flex">
@@ -44,10 +45,8 @@
                         <input type="text" class="location__input" placeholder="Enter your delivery location">
                         <div class="location__submit">
                             <i class="ri-map-pin-line location__icon"></i>
-                            <button class="button btn__discover">Discover <i class="ri-arrow-right-s-line"></i></button>
-                        </div>
-                       
-                       
+                            <button class="button btn__discover">Discover <i class="ri-arrow-right-s-line right__arrow"></i></button>
+                        </div>                       
                     </form>
                     <div class="home__member">
                         Already member of our communty? <span class="home__member-sign-in">Sign in</span>
@@ -56,7 +55,55 @@
                 <img src="assets/img/hero_rider.png" alt="home image" class="home__img">
             </div>
         </section>
+
+        <!-- Food near me -->
+        <section class="section" id="food-near-me">
+            <div class="fnm__container container">
+                <div class="fnm__data">
+                    <h2 class="fnm__title">
+                        Food near me
+                        <img src="assets/img/fire_icon.svg" alt="">
+                    </h2>
+                    <!-- <div class="swiper-button-prev">next</div> -->
+                    <div class="fnm__scroll">
+                        <i class="ri-arrow-left-s-line left__arrow"></i>
+                        <i class="ri-arrow-right-s-line right__arrow"></i>
+                    </div>
+                    <!-- <div class="next-item" onclick="swiper.slideNext()">Next</div> -->
+                </div>
+
+                <div class="fnm__items swiper">
+
+                    <div class="swiper-wrapper">                       
+                        <div class="swiper-slide">
+                            <div class="fnm__item-data">
+                                <div class="fnm__item-desc">
+                                    <h3 class="fnm__item-title">Pizza</h3>
+                                    <p>Starting</p>
+                                    <span class="fnm__item-price">$14.00</span>
+                                </div>
+                                <img src="assets/img/pizza.png" alt="image" class="fnm__item-image">
+                            </div>                        
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="fnm__item-data">
+                                <div class="fnm__item-desc">
+                                    <h3 class="fnm__item-title">Drinks</h3>
+                                    <p>Starting</p>
+                                    <span class="fnm__item-price">$2.00</span>
+                                </div>
+                                <img src="assets/img/juice.png" alt="image" class="fnm__item-image">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>  
 </body>
 </html>

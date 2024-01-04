@@ -15,26 +15,51 @@ const showMenu = (toggleId, navId) => {
  showMenu('nav-toggle','nav-menu')
  
 
- const sr = ScrollReveal({
-    origin:'top',
-    distance:'60px',
-    duration:2500,
-    delay:400,
-    reset:true //Animations repeat
-})
+
+ const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  
+
+
+//  const sr = ScrollReveal({
+//     origin:'top',
+//     distance:'60px',
+//     duration:2500,
+//     delay:400,
+//     reset:true //Animations repeat
+// })
  
-sr.reveal('.home__data')
-sr.reveal('.home__img',{origin:'bottom'})// đổi hướng di chuyển từ dưới lên, mặc định là top
-// sr.reveal('.enjoy__card,.popular__card',{interval:100}) // chỉ lấy từ lớp có dữ liệu không lấy container
-sr.reveal('.aboutus__data',{origin:'right'})
-sr.reveal('.aboutus__img',{origin:'left'})
+// sr.reveal('.home__data')
+// sr.reveal('.home__img',{origin:'bottom'})// đổi hướng di chuyển từ dưới lên, mặc định là top
+// // sr.reveal('.enjoy__card,.popular__card',{interval:100}) // chỉ lấy từ lớp có dữ liệu không lấy container
+// sr.reveal('.aboutus__data',{origin:'right'})
+// sr.reveal('.aboutus__img',{origin:'left'})
 
-sr.reveal('.ourfood__data',{origin:'bottom'})
-sr.reveal('.ourfood__img',{origin:'top'})
+// sr.reveal('.ourfood__data',{origin:'bottom'})
+// sr.reveal('.ourfood__img',{origin:'top'})
 
-sr.reveal('.img_gallery1',{origin:'top'})
-sr.reveal('.img_gallery2',{origin:'top'})
-sr.reveal('.img_gallery3',{origin:'top'})
-sr.reveal('.img_gallery4',{origin:'top'})
-sr.reveal('.img_gallery5',{origin:'top'})
-sr.reveal('.img_gallery6',{origin:'top'})
+// sr.reveal('.img_gallery1',{origin:'top'})
+// sr.reveal('.img_gallery2',{origin:'top'})
+// sr.reveal('.img_gallery3',{origin:'top'})
+// sr.reveal('.img_gallery4',{origin:'top'})
+// sr.reveal('.img_gallery5',{origin:'top'})
+// sr.reveal('.img_gallery6',{origin:'top'})
