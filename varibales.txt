@@ -1,0 +1,5 @@
+--mau-den:#101010
+--mau-vang:feb618
+--mau-do:#ef4415
+--discover-linear-gradient: linear-gradient(92deg, #3FDA7D 48.17%, #00BE4C 100%);
+--discover-box-shadow: box-shadow (0px 10px 20px -10px rgba(234, 234, 234, 0.40);
