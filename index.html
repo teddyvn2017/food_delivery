@@ -14,23 +14,49 @@
     <header id="header" class="header">
         <nav class="nav container">
             <div class="nav__data">
-                <a href="#" class="nav__logo">Bensik</a>
-            </div>
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </a>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line nav__burger"></i>
-                <i class="ri-close-line nav__close"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
             </div>
-
-            <div class="nav__menu">
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li><a href="/" class="nav__list">Home</a></li>
-                    <li><a href="/review" class="nav__list">Home</a></li>
-                    <li><a href="/aboutus" class="nav__list">About Us</a></li>
-                    <li><a href="/contactus" class="nav__list">Contact Us</a></li>
+                    <li><a href="/" class="nav__link">Home</a></li>
+                    <li><a href="/review" class="nav__link">Review</a></li>
+                    <li><a href="/aboutus" class="nav__link">About Us</a></li>
+                    <li><a href="/contactus" class="nav__link">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <main class="main">
+        <section class="section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data flex">
+                    <h2 class="home__subtitle">Hungry</h2>
+                    <h1 class="home__title">Wait a minute for delicious.</h1>
+                    <p class="home__desc">Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 20mins.</p>
+                    <form action="" class="frm__location">
+                        <input type="text" class="location__input" placeholder="Enter your delivery location">
+                        <div class="location__submit">
+                            <i class="ri-map-pin-line location__icon"></i>
+                            <button class="button btn__discover">Discover <i class="ri-arrow-right-s-line"></i></button>
+                        </div>
+                       
+                       
+                    </form>
+                    <div class="home__member">
+                        Already member of our communty? <span class="home__member-sign-in">Sign in</span>
+                    </div>
+                </div>
+                <img src="assets/img/hero_rider.png" alt="home image" class="home__img">
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>  
 </body>
 </html>

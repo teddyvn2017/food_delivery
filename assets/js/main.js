@@ -7,6 +7,7 @@ const showMenu = (toggleId, navId) => {
         //add show-menu class to nav menu 
         nav.classList.toggle('show-menu')
         toggle.classList.toggle('show-icon')
+        // console.log(nav);
     })    
  }
  
