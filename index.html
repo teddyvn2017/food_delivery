@@ -64,12 +64,10 @@
                         Food near me
                         <img src="assets/img/fire_icon.svg" alt="">
                     </h2>
-                    <!-- <div class="swiper-button-prev">next</div> -->
                     <div class="fnm__scroll">
-                        <i class="ri-arrow-left-s-line left__arrow"></i>
-                        <i class="ri-arrow-right-s-line right__arrow"></i>
+                        <i class="ri-arrow-left-s-line fnm__left__arrow" onclick="swiper.slidePrev()"></i>
+                        <i class="ri-arrow-right-s-line  fnm__right__arrow" onclick="swiper.slideNext()"></i>
                     </div>
-                    <!-- <div class="next-item" onclick="swiper.slideNext()">Next</div> -->
                 </div>
 
                 <div class="fnm__items swiper">
@@ -82,7 +80,7 @@
                                     <p>Starting</p>
                                     <span class="fnm__item-price">$14.00</span>
                                 </div>
-                                <img src="assets/img/pizza.png" alt="image" class="fnm__item-image">
+                                <img src="assets/img/pizza.svg" alt="image" class="fnm__item-image">
                             </div>                        
                         </div>
     
@@ -101,6 +99,11 @@
                 </div>
                 
             </div>
+        </section>
+
+        <!-- Service -->
+        <section class="section" id="service">
+
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

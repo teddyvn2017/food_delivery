@@ -11,7 +11,8 @@
 	--mau-do:#ef4415;
 	--mau-xanh:#3fda7d;
 	--title-color:#101010;
-
+	--filter-img: invert(1);
+	--shadow-img: drop-shadow(0 8px 12px hsla(0, 0%, 0%, .2));
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
 
@@ -330,11 +331,15 @@ img {
 
 .fnm__title {
 	display: flex;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: var(--font-bold);
 	gap: .5rem;
 
 	justify-content: start;
+}
+
+.fnm__title img {
+	width: 1.5rem;
 }
 
 .fnm__scroll {
@@ -343,7 +348,7 @@ img {
 
 .fnm__item-data {
 	display: grid;
-	grid-template-columns: repeat(2,minmax(180px,220px));
+	grid-template-columns: repeat(2,minmax(160px,220px));
 	justify-content: center;
 	align-items: center;
 }
@@ -365,7 +370,26 @@ img {
 	font-size: var(--h3-font-size);
 }
 
+.fnm__item-image {
+	/* box-shadow:0 2px 16px hsla(0, 0%, 0%, .1); */
+	filter: var(--shadow-img);
+}
+
+/* swiperjs */
 .swiper-button-next,.swiper-button-prev {
 	color:var(--mau-den);
 	font-size: var(--small-font-size);
+}
+
+.fnm__left__arrow, .fnm__right__arrow {
+	font-size: var(--normal-font-size);
+	border-radius: 50%;
+	width: 1rem;
+	height: 1rem;
+	padding: .25rem;
+	background-color: var(--mau-xam);
+}
+
+.fnm__left__arrow {
+	margin-right: .5rem;
 }
