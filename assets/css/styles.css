@@ -11,7 +11,8 @@
 	--mau-do:#ef4415;
 	--mau-xanh:#3fda7d;
 	--title-color:#101010;
-
+	--filter-img: invert(1);
+	--shadow-img: drop-shadow(0 8px 12px hsla(0, 0%, 0%, .2));
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
 
@@ -331,11 +332,10 @@ img {
 
 .fnm__title {
 	display: flex;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: var(--font-bold);
 	gap: .5rem;
 	justify-content: start;
-	/* grid-column: 1/ span 2; */
 }
 
 .fnm__scroll {
@@ -356,7 +356,7 @@ img {
 }
 
 .fnm__item-title {
-	font-size: var(--h3-font-size);
+	font-size: var(--h2-font-size);
 	color: var(--mau-den);
 	font-weight: var(--font-bold);
 	margin-bottom: .5rem;
@@ -372,7 +372,83 @@ img {
 	font-size: var(--h3-font-size);
 }
 
+.fnm__item-image {
+	/* box-shadow:0 2px 16px hsla(0, 0%, 0%, .1); */
+	filter: var(--shadow-img);
+}
+
+/* swiperjs */
 .swiper-button-next,.swiper-button-prev {
 	color:var(--mau-den);
 	font-size: var(--small-font-size);
+}
+
+.fnm__left__arrow, .fnm__right__arrow {
+	font-size: var(--normal-font-size);
+	border-radius: 50%;
+	width: 1rem;
+	height: 1rem;
+	padding: .25rem;
+	background-color: var(--mau-xam);
+}
+
+.fnm__left__arrow {
+	margin-right: .5rem;
+}
+
+/* Service */
+.service__subtitle {
+	font-family: var(--second-font);
+	color: var(--mau-do);
+	font-size: 2.5rem;	
+	text-align: center;	
+}
+
+.service__title {
+	color: var(--mau-den);
+	text-align: center;
+	font-size: 3rem;
+	font-weight: var(--font-bold);
+	margin-top: .5rem;
+}
+.service__container {
+	margin-top: 3rem;
+	gap: 2rem;
+}
+
+.service__img {
+	width: 100%;
+	filter: var(--shadow-img);
+}
+
+.service__item-title {
+	color: var(--mau-den);
+	font-size: var(--h2-font-size);
+	font-weight: var(--font-bold);
+	text-align: center;
+	padding-bottom: 1rem;
+	padding-top: 1.5rem;
+}
+
+.service__feature {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: linear-gradient(120deg, var(--mau-vang) 50%, var(--mau-xanh) 50%);
+    border-radius: 1rem;
+}
+
+.service__feature-title {
+	color: var(--mau-trang);
+	font-size: var(--big-font-size);
+	font-weight: var(--font-semi-bold);
+	margin-bottom: 1.5rem;
+}
+
+.service__feature-desc {
+	color: var(--mau-trang);
+	font-size: var(--normal-font-size);
+}
+
+.saleoff__image {
+	filter: var(--shadow-img);
 }
