@@ -369,7 +369,7 @@ img {
 	align-items: center; */
 	align-items: center;
 	gap: 2rem;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(auo,);
 }
 
 .fnm__title {
@@ -378,11 +378,6 @@ img {
 	font-weight: var(--font-bold);
 	gap: .5rem;
 	justify-content: start;
-	width:max-content;
-}
-
-.fnm__title img {
-	width: 1.5rem;
 }
 
 .fnm__scroll {
@@ -408,6 +403,7 @@ img {
 	font-weight: var(--font-bold);
 	margin-bottom: .5rem;
 }
+
 .fnm__item-desc p {
 	color: var(--mau-xam);
 	margin-bottom: .25rem;
