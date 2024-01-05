@@ -157,6 +157,7 @@ img {
 	height: 2rem;
 	width: 2rem;
 	transition: opacity .2s,transform .4s;
+	z-index: var(--z-fixed);
 }
 
 .nav__burger,.nav__close {
@@ -325,7 +326,7 @@ img {
 	align-items: center; */
 	align-items: center;
 	gap: 2rem;
-	grid-template-columns: repeat(2,auto);
+	grid-template-columns: repeat(2,1fr);
 }
 
 .fnm__title {
@@ -343,9 +344,15 @@ img {
 
 .fnm__item-data {
 	display: grid;
-	grid-template-columns: repeat(2,minmax(180px,220px));
+	grid-template-columns: repeat(2,minmax(160px,220px));
 	justify-content: center;
 	align-items: center;
+	/* display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center; */
+	
 }
 
 .fnm__item-title {
