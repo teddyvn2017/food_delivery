@@ -713,11 +713,17 @@ img {
 }
 
 /* Subscribe newsletter */
+
+
 .subscribe__container {
 
 	padding: 2rem;
 	background: linear-gradient(120deg, var(--mau-do) 50%, var(--mau-vang) 50%);
 	border-radius: 1rem;
+}
+
+.subscribe__data {
+	color: var(--mau-trang);
 }
 
 
@@ -732,6 +738,12 @@ img {
 	align-items: center;
 }
 
+.subscribe__title {
+	color:var(--mau-trang);
+	font-weight:var(--font-weight);
+	margin-bottom: 2rem;
+}
+
 .subscribe__discover {
 	background: #2FB652;
 	border-top-right-radius: .5rem;
@@ -741,6 +753,13 @@ img {
 	font-size: var(--normal-font-size);
 }
 
+
+
+.subscribe__data {
+	color: var(--mau-trang);
+}
+
+.
 /* border-radius: 0rem 1rem 1rem 0rem;
 background: #2FB652;
 box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.40); */
