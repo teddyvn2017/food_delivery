@@ -36,6 +36,13 @@ const showMenu = (toggleId, navId) => {
   });
   
 
+const stars = document.querySelectorAll('.ppmn__rate i')  ;
+stars.forEach((st,index) => {
+  st.addEventListener('click',() => {
+    console.log(index)
+  })
+})
+console.log(stars);
 
 //  const sr = ScrollReveal({
 //     origin:'top',
