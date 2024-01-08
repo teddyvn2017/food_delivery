@@ -8,9 +8,10 @@
     --mau-den:#101010;
 	--mau-den-nhat:#646464;
 	--mau-xam:#7b7b7b;
-	--mau-xam-nhat:#e9e9e9;
+	--mau-xam-nhat:#d3d3d3;
 	--mau-vang:#feb618;
 	--mau-do:#ef4415;
+	--mau-do-dam:#9e2402;
 	--mau-xanh:#3fda7d;
 	--title-color:#101010;
 	--filter-img: invert(1);
@@ -69,10 +70,10 @@ button {
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
 }
-
+/* 
 body {
 	font-family: var(--body-font);
-}
+} */
 
 input,
 button {
@@ -567,7 +568,11 @@ img {
 } 
 
 .ppmn__rate {
-	color: var(--mau-vang);
+	color: var(--mau-xam);
+	font-size: var(--small-font-size);
+	align-self: self-end;
+	display: inline-flex;
+	gap: .5rem;
 	font-size: var(--small-font-size);
 }
 
@@ -601,7 +606,7 @@ img {
 	background-color: var(--mau-do);
 	border-radius: .25rem;
 	color: var(--mau-trang);
-	margin-right: .5rem;
+	margin-right: .5rem;	
 }
 
 .ppmn__item-share {
@@ -610,6 +615,12 @@ img {
 	border-radius: .25rem;
 	color: var(--mau-trang);
 }
+
+.ppmn__item-heart:hover,.ppmn__item-share:hover {
+	cursor: pointer;
+	background-color: ;
+}
+
 
 .ppmn__all_menu {
 	margin-top:4rem;
@@ -757,7 +768,7 @@ img {
 
 .app__apple,.app__google {
 	border-radius: .5rem;
-	border: 1px solid var(--mau-xam);
+	border: 2px solid var(--mau-xam-nhat);
 	padding: 1rem;
 	transition: background-color .4s;
 	cursor: pointer;
@@ -765,6 +776,8 @@ img {
 
 .app__apple:hover,.app__google:hover {	
 	background-color: var(--mau-xam);
+	color: var(--mau-trang);
+	border: 2px solid var(--mau-xam);
 }
 
 /* Subscribe newsletter */
@@ -815,6 +828,11 @@ img {
 /* Footer */
 .footer {
 	background-color: var(--mau-xam-nhat);
+	margin-top: 4rem;
+}
+
+.footer__container {
+	padding-top: 2.5rem;
 }
 
 
