@@ -11,4 +11,4 @@ Mong các bạn cho ý kiến để hoàn thiện tốt hơn.
 
 Chân thành cảm ơn!
 
-![Alt text](image.png)
+![Alt text](image-1.png)
