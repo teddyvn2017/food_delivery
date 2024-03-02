@@ -879,14 +879,14 @@ img {
 
 .footer__socials i:hover {
 	color: var(--mau-do);
-	cursor: pointer;
-	
+	cursor: pointer;	
+
 }
 
 .footer__links {
-	display: grid;	
-	gap: 1rem;
-	
+	display: grid;
+	gap: 1rem;	
+
 }
 
 .footer__link {
